@@ -1,0 +1,79 @@
+
+body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    background-color: black !important;
+  }
+  
+  .calculator{
+    width : 400px;
+    height : 400px;
+    background-color: rgb(190, 57, 200);
+    text-align: center;
+    border-radius: 40px;
+    padding: 20px;
+ }
+
+ .display{
+    width: 400px;
+    height : 140px;
+    background-color: rgb(152, 45, 159);
+    border-radius: 40px;
+    text-align: right;
+    font-size: 7rem;
+    color:white;
+    font-family: cursive;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+ }
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 5px; /* Space between buttons */   
+
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(249, 17, 175); 
+}
+
+.operator{
+background-color: rgb(40, 13, 34, 0.5);
+color: white;
+font-family: cursive;
+}
+
+.delete{
+color: white;
+font-family: cursive;
+background-color: rgb(40, 13, 34, 0.5);
+}
+
+.calculate{
+    background-color: rgb(217, 217, 217, 0.5);
+    color: white;
+    font-family: cursive;
+}
+
+.number{
+    background-color: rgb(217, 217, 217, 0.5);
+    color: white;
+    font-family: cursive;
+
+}
